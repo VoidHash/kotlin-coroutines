@@ -25,21 +25,32 @@ To have a better understanding about coroutines in Kotlin, we must first learn m
 
 > The term **Dispatcher** refers to a component used to determine the execution context in which a coroutine will run. Dispatchers are essential for efficiently managing threads and allocating asynchronous tasks across different contexts.
 
-![dispatcher_table](https://github.com/VoidHash/kotlin-coroutines/assets/8929413/2f7a6310-7db5-4305-be7a-c02bf46c55be)
+![dispatcher_table_50](https://github.com/VoidHash/kotlin-coroutines/assets/8929413/11342975-d1c4-4fab-b69d-8cce09ffd56d)
+<p></p>
 
 - ### Scopes
 
 > A coroutine **Scope** is an interface that provides a structure to manage the coroutines execution. It is used to launch coroutines and manage their lifecycles. It also defines a context for the coroutines, which includes information about the execution hierarchy, cancellation, and other associated settings. When a Scope is canceled all coroutines associated with it are canceled together.
 
-![lifecycle_coroutines](https://github.com/VoidHash/kotlin-coroutines/assets/8929413/dcb6dc92-6695-4713-86f1-c6241889fc53)
+![lifecycle_coroutines_50](https://github.com/VoidHash/kotlin-coroutines/assets/8929413/e6ac126d-6a68-497d-a19a-787a2ad8aa26)
+<p></p>
 
 - ### Jobs
 
 > A **Job** is an interface that represents a unit of asynchronous work, often associated with the use of coroutines. Therefore, a **Job** is basically an asynchronous task that can be launched to run in the background, and can be monitored, canceled or completed. When a coroutine is launched, it returns a Job. And this Job represents the execution of this coroutine.
 
-![sample](https://github.com/VoidHash/kotlin-coroutines/assets/8929413/1c0e6d9e-96e7-493f-8d67-15c5174e71d5)
+![coroutine_structure_50](https://github.com/VoidHash/kotlin-coroutines/assets/8929413/d3322b13-4e6e-4a7b-b7dc-37b1b7529519)
+<p></p>
 
-<br>
+## Advantages of Coroutines over Threads
+
+1. **Structured Concurrency**: Coroutines provide a structured way to manage concurrency, making it easier to handle complex asynchronous operations. They allow developers to write sequential-looking code while still achieving concurrency.<p></p>
+2. **Lightweight**: Coroutines are lightweight compared to threads, as they don’t require creating and managing additional system resources. This makes coroutines more efficient in terms of memory usage.<p></p>
+3. **Suspend and Resume**: Coroutines allow for suspending and resuming execution at specific points, making it easier to handle long-running tasks without blocking the main thread. This helps in keeping the UI responsive and improves the overall user experience.<p></p>
+4. **Exception Handling**: Coroutines provide built-in exception handling mechanisms, making it easier to handle and propagate exceptions within the coroutine context.<p></p>
+5. **Independence**: Unlike threads for coroutines, the application by default does not wait for it to finish the execution.<p></p>
+
+Both threads and coroutines have their place in Kotlin Android development when it comes to managing concurrency. Threads are a more traditional approach, while coroutines provide a more modern and structured way to handle asynchronous operations. Coroutines offer advantages such as structured concurrency, lightweight execution, and better exception handling. However, it’s important to choose the right tool for the job based on the specific requirements of your application.
 
 ## Easy mode
 
