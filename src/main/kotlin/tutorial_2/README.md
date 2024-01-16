@@ -22,7 +22,7 @@ We can do that using *joinAll()* in the end of our code:
 joinAll(myJob01, myJob02)
 ```
 
-In this [example](), we define 2 function to run concurrently. Checking the logs we notice that both functions start and 
+In this [example](https://github.com/VoidHash/kotlin-coroutines/blob/master/src/main/kotlin/tutorial_2/Main2.kt), we define 2 function to run concurrently. Checking the logs we notice that both functions start and 
 finish at same time
 
-[tutorial_02.png]
+![tutorial_02_40](https://github.com/VoidHash/kotlin-coroutines/assets/8929413/6f2d9fa8-1694-47ca-a102-f85ca452f120)
