@@ -4,7 +4,7 @@ Asynchronous or non-blocking programming is an important part of the development
 
 ### Tutoriais
 
-This tutoriais is part of my studies about kotlin coroutines. My motivation is to build a knowledge base on this subject in order to help anyone who wishes to delve deeper into this topic.
+This tutoriais is part of my studies about kotlin coroutines. My motivation is to build a knowledge base about this subject in order to help anyone who wishes to delve deeper into this topic.
 
 1. [Sequential code](https://github.com/VoidHash/kotlin-coroutines/tree/master/src/main/kotlin/tutorial_1)
 2. [Creating coroutines](https://github.com/VoidHash/kotlin-coroutines/blob/master/src/main/kotlin/tutorial_2)
