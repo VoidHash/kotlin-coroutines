@@ -18,6 +18,7 @@ val myJob02 = coroutineScope.launch {
 
 // Your logic here
 
+// Cancel all coroutine from coroutineScope
 coroutineScope.coroutineContext.cancelChildren()
 ```
 Or you can cancel it, individually.
@@ -32,6 +33,7 @@ context will be stay active.
 Note: Some function, like *delay()*, set the coroutine from Active state to Suspend state for amount of time and from
 Suspend state to Active state after this.
 
-In this [exemple](https://github.com/VoidHash/kotlin-coroutines/blob/master/src/main/kotlin/tutorial_3/Main3.kt), we have 2 coroutine that is set to run for 5 second and will be cancel in 3 second.
+In this [exemple](https://github.com/VoidHash/kotlin-coroutines/blob/master/src/main/kotlin/tutorial_3/Main3.kt), we have 2 coroutine that is set to run for 5 second and will be cancel in 3 second. 
+We use *try{ } catch (e: Exception) { }* to handler exception messages when the coroutine is canceled
 
 ![tutorial_03_40](https://github.com/VoidHash/kotlin-coroutines/assets/8929413/5a6cdde7-320a-4df3-b4e9-a28534f9a636)

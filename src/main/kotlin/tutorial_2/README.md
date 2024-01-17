@@ -20,6 +20,10 @@ To print our jobs running in a coroutine we must suspend your Main function util
 We can do that using *joinAll()* in the end of our code:
 ```kotlin
 joinAll(myJob01, myJob02)
+
+// We can do this individually
+// myJob01.join()
+// myJob02.join()
 ```
 
 In this [example](https://github.com/VoidHash/kotlin-coroutines/blob/master/src/main/kotlin/tutorial_2/Main2.kt), we define 2 function to run concurrently. Checking the logs we notice that both functions start and 
