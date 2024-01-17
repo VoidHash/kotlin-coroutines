@@ -25,5 +25,7 @@ val result = taskDeferred.await()
 println("Async coroutine returns: $result")
 ```
 
-In this [exemple](), we define two coroutine, one of then async. When the coroutines
-finish, we print the value expected from our async coroutine.
+In this [exemple](https://github.com/VoidHash/kotlin-coroutines/blob/master/src/main/kotlin/tutorial_5/Main5.kt), we define two coroutine, one of then async. When the coroutines
+finish, we print the result value expected from our async coroutine.
+
+![tutorial_05_40](https://github.com/VoidHash/kotlin-coroutines/assets/8929413/72159996-9953-4c4f-ba9a-dbca4d02e282)
