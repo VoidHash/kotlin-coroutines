@@ -14,7 +14,7 @@ This tutoriais is part of my studies about kotlin coroutines. My motivation is t
 
 ### **Important concepts**
 
-To have a better understanding about coroutines in Kotlin, we must first learn more about some important concepts on this subject:
+For a better understanding about coroutines in Kotlin, we must first learn more about some important concepts on this subject:
 
 - ### Concurrency
 
