@@ -13,8 +13,8 @@ val nonCancellableCoroutine = coroutineScope.launch(NonCancellable) {
     }
 ```
 
-In this [exemple](), we set the *timerJob* as a *NonCancellable* coroutine, when we try to
+In this [exemple](https://github.com/VoidHash/kotlin-coroutines/blob/master/src/main/kotlin/tutorial_4/Main4.kt), we set the *timerJob* coroutine as *NonCancellable*, when we try to
 cancel both of then, only *taskJob* coroutine will be canceled while *timerJob* will finish
 to be executed.
 
-[tutorial_4]
+![tutorial_04_40](https://github.com/VoidHash/kotlin-coroutines/assets/8929413/a9ab66ea-465c-4238-87fc-b497f42285c3)
