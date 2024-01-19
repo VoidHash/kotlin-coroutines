@@ -39,9 +39,10 @@ scope.launch {
 Following the job hierarchic, the *withContext* coroutine will run inside the *scope*
 coroutine. 
 
-In this [exemple](), we implement an external job, and three coroutine 
+In this [exemple](https://github.com/VoidHash/kotlin-coroutines/blob/master/src/main/kotlin/tutorial_6/Main6.kt), we implement an external job, and three coroutine 
 running inside it. We use *withContext()* to change the context of one of then. 
 When we print the Job hierarchic is easy to know how the coroutines is 
 organized inside it. 
 
-[tutorial_6]
+![tutorial_06_40](https://github.com/VoidHash/kotlin-coroutines/assets/8929413/ee35073f-fed4-4967-b503-994b6c927b08)
+
