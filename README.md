@@ -11,6 +11,7 @@ This tutoriais is part of my studies about kotlin coroutines. My motivation is t
 3. [Coroutine cancellation](https://github.com/VoidHash/kotlin-coroutines/blob/master/src/main/kotlin/tutorial_3)
 4. [Non cancellable coroutine](https://github.com/VoidHash/kotlin-coroutines/blob/master/src/main/kotlin/tutorial_4)
 5. [Async coroutines](https://github.com/VoidHash/kotlin-coroutines/tree/master/src/main/kotlin/tutorial_5)
+6. [Coroutine hierarchic](https://github.com/VoidHash/kotlin-coroutines/blob/master/src/main/kotlin/tutorial_6)
 
 ### **Important concepts**
 
@@ -70,11 +71,8 @@ suspend fun main() {
 
     val scopeJob = Job()
     val scope = CoroutineScope(scopeJob + Dispatchers.IO + CoroutineName("external scope"))
-    
-    scope.printInfo()
 
     val job = scope.launch(Dispatchers.Default + CoroutineName("internal coroutine")) {
-        this.printInfo()
         delay(150)
     }
 
