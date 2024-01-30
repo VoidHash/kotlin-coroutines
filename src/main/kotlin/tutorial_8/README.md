@@ -23,7 +23,8 @@ supervisor can implement a custom policy for handling failures of its children:
 - A failure of a child job that was created using async can be handled via *Deferred.await* on the resulting 
 deferred value.
 
-With this [example](), it is easy to understand how both *Job* and *SupervisorJob* works. To help us,
+With this [example](https://github.com/VoidHash/kotlin-coroutines/blob/master/src/main/kotlin/tutorial_8/Main8.kt), 
+it is easy to understand how both *Job* and *SupervisorJob* works. To help us,
 we use a *CoroutineExceptionHandler* to handler any exception that we caught.
 
 
