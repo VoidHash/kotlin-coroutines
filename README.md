@@ -13,6 +13,7 @@ This tutoriais is part of my studies about kotlin coroutines. My motivation is t
 5. [Async coroutines](https://github.com/VoidHash/kotlin-coroutines/tree/master/src/main/kotlin/tutorial_5)
 6. [Coroutine hierarchic](https://github.com/VoidHash/kotlin-coroutines/blob/master/src/main/kotlin/tutorial_6)
 7. [Memory sharing](https://github.com/VoidHash/kotlin-coroutines/tree/master/src/main/kotlin/tutorial_7)
+8. [Supervisor job]()
 
 ### **Important concepts**
 
